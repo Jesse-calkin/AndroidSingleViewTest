@@ -2,6 +2,7 @@ package com.jessecalkin.androidsingleviewtest.tests;
 import android.test.ActivityInstrumentationTestCase2;
 import com.singleviewtest.app.FullscreenActivity;
 
+
 /**
  * Created by jesse on 5/12/14.
  */
@@ -19,4 +20,14 @@ public class tests extends ActivityInstrumentationTestCase2<FullscreenActivity> 
         mFullscreenActivity = getActivity();
 
     }
+    public void testShouldPass() {
+        assertTrue(true);
+    }
+    public void testShouldFail() {
+        assertTrue(false);
+    }
+
+//    public void testSomethingReal() {
+//        onView(withId(id.dummy_button)).perform(click());
+//    }
 }
