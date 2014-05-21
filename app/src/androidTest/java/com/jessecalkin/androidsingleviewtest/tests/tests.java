@@ -5,6 +5,7 @@ import com.singleviewtest.app.FullscreenActivity;
 
 /**
  * Created by jesse on 5/12/14.
+ * use ./gradlew connectedCheck in console to run
  */
 public class tests extends ActivityInstrumentationTestCase2<FullscreenActivity>  {
     private FullscreenActivity mFullscreenActivity;
