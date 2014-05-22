@@ -41,15 +41,20 @@ public class tests extends ActivityInstrumentationTestCase2<FullscreenActivity> 
 //        assertTrue(false);
 //    }
 
-    public void testSomethingReal() {
-        mFullscreenActivity.runOnUiThread(
-                new Runnable() {
-                    @Override
-                    public void run() {
+    public void testToast() {
+//        mFullscreenActivity.runOnUiThread(
+//                new Runnable() {
+//                    @Override
+//                    public void run() {
                         onView(withId(R.id.fullscreen_content))
                                 .check(matches(isDisplayed()))
                                 .perform(click());
-                    }
-                });
+                        onView(withId(R.id.dummy_button))
+                                .check(matches(isDisplayed()))
+                                .perform(click());
+                        onView(withId(R.id.fullscreen_content))
+                                .check(matches(withText("HAMSAMMICH!")));
+//                    }
+//                });
     }
 }
